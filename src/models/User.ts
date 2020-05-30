@@ -21,10 +21,12 @@ class User {
   password: string;
 
   @CreateDateColumn()
-  createdAt: Date;
+  // eslint-disable-next-line camelcase
+  created_at: Date;
 
   @UpdateDateColumn()
-  updatedAt: Date;
+  // eslint-disable-next-line camelcase
+  updated_at: Date;
 }
 
 export default User;
